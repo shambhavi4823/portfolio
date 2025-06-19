@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shambhavi Sinha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#social">Social Links</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="eada5eba-c1cf-4f3f-8713-bb42630df09e.jpg" alt="Profile Photo" class="profile-pic" />
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Shambhavi Sinha</span></h2>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <p>
+    <strong>
+      I'm a 3rd-year B.Tech student at JECRC Foundation, Jaipur, specializing in Computer Science and Artificial Intelligence.
+      I have a strong interest in software engineering. 
+      I enjoy building modern web applications,
+      solving real-world problems through code, and constantly learning new technologies.
+      Apart from academics, I actively participate in coding competitions, tech fests, and development projects.
+    </strong>
+  </p>
+</section>
+>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+  <h3>🎯 Number Guessing Game</h3>
+  <p>
+    A simple yet engaging web-based game where the player tries to guess a randomly generated number within a limited number of attempts. It offers real-time feedback like "Too High" or "Too Low" and includes a restart option. Great for practicing logical thinking and UI interaction.
+  </p>
+  <a href="https://github.com/shambhavi4823/codsoft/blob/main/guess.java" target="_blank">View Project</a>
+  <button class="toggle-btn" onclick="toggleFeatures('guessinggame-features')">🔽 Key Features</button>
+  <ul class="features-list" id="guessinggame-features">
+    <li>Random number generation between 1–100</li>
+    <li>Interactive feedback on guesses</li>
+    <li>Guess attempt tracking and display</li>
+    <li>Game restart functionality</li>
+    <li>Built using Java Programming</li>
+  </ul>
+</div>
+<div class="project-card">
+  <h3>🏧 ATM Interface</h3>
+  <p>
+    A console-based simulation of an Automated Teller Machine (ATM) that allows users to securely log in and perform essential banking functions like checking balance, deposits, and withdrawals. Built to practice object-oriented programming, logic building, and user interaction handling.
+  </p>
+  <a href="https://github.com/shambhavi4823/codsoft/blob/main/atm.java" target="_blank">View Project</a>
+  <button class="toggle-btn" onclick="toggleFeatures('atm-features')">🔽 Key Features</button>
+  <ul class="features-list" id="atm-features" style="display: none;">
+    <li>Secure login with PIN authentication</li>
+    <li>Check account balance</li>
+    <li>Deposit and withdraw money</li>
+    <li>Transaction history tracking</li>
+    <li>Change PIN functionality</li>
+    <li>Built using Java Programming</li>
+  </ul>
+</div>
+
+
+  </section>
+
+ <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>👨‍💻 Programming Languages</h3>
+      <ul>
+        
+        <li>C++</li>
+        <li>Python</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>🌐 Web Development</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>🗄️ Database</h3>
+      <ul>
+        <li>MySQL</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>📚 Core CS Concepts</h3>
+      <ul>
+        <li>DSA (Data Structures & Algorithms)</li>
+        <li>OOP'S</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>💬 Soft Skills</h3>
+      <ul>
+        <li>Teamwork</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- RESUME SECTION -->
+<section id="resume">
+  <h2>Resume</h2>
+  <a class="resume-btn" href="https://drive.google.com/file/d/1ZXTiih9pr0ONAf3vurYOXtKq3cVUyjWT/view?usp=share_link" target="_blank">
+    📄 View Resume (Download)
+  </a>
+</section>
+
+
+<section id="social">
+  <h2>Social Links</h2>
+  <div class="social-buttons-named">
+    <a class="social-btn" href="https://github.com/shambhavi4823" target="_blank">GitHub</a>
+    <a class="social-btn" href="http://www.linkedin.com/in/shambhavi-sinha-a8b960290" target="_blank">LinkedIn</a>
+    <a class="social-btn" href="https://leetcode.com/u/Shambhavi_Sinha4823/" target="_blank">LeetCode</a>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shambhavisinha.csai27@jecrc.ac.in">shambhavisinha.csai27@jecrc.ac.in</a></p>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleFeatures(id) {
+      const list = document.getElementById(id);
+      list.style.display = (list.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
