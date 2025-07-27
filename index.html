@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .features-list {
+      display: none;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .features-list.show {
+      display: block;
+    }
+
+    .toggle-btn {
+      margin-top: 8px;
+      cursor: pointer;
+      background: #eee;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -69,7 +89,7 @@
       </p>
       <a href="https://github.com/shambhavi4823/codsoft/blob/main/atm.java" target="_blank">View Project</a>
       <button class="toggle-btn" onclick="toggleFeatures('atm-features')">🔽 Key Features</button>
-      <ul class="features-list" id="atm-features" style="display: none;">
+      <ul class="features-list" id="atm-features">
         <li>Secure login with PIN authentication</li>
         <li>Check account balance</li>
         <li>Deposit and withdraw money</li>
@@ -153,7 +173,7 @@
   <script>
     function toggleFeatures(id) {
       const list = document.getElementById(id);
-      list.style.display = (list.style.display === "block") ? "none" : "block";
+      list.classList.toggle("show");
     }
   </script>
 </body>
